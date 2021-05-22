@@ -1,0 +1,38 @@
+.edit-form__submit-button {
+  width: 83.25%;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 2px;
+  margin-left: 36px;
+  margin-top: 48px;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.edit-form__submit-button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .edit-form__submit-button {
+    width: 238px;
+    height: 46px;
+    margin-top: 45px;
+    margin-left: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .edit-form__submit-button {
+    width: 238px;
+    height: 46px;
+    margin-top: 45px;
+    margin-left: 22px;
+  } 
+}

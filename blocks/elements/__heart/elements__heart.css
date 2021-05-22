@@ -1,0 +1,17 @@
+.elements__heart {
+  width: 22px;
+  height: 19px;
+  background-image: url(../../../images/heart.svg);
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.elements__heart:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.elements__heart:active {
+  opacity: 1;
+  background-image: url(../../../images/heart-active.svg);
+}
