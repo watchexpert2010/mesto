@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/index.css">
-    <title>Document</title>
+    <title>Mesto</title>
 </head>
 <body>
   <div class="page">
@@ -16,63 +16,63 @@
           <div class="profile__avatar"></div>
           <div class="profile__info">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
-            <h2 class="profile__subtitle">Исследователь океана</h2>
-            <button class="profile__editbutton"></button>
+            <p class="profile__subtitle">Исследователь океана</p>
+            <button class="profile__editbutton" type="button"></button>
           </div>          
-          <button class="profile__addbutton"></button>
+          <button class="profile__addbutton" type="button"></button>
         </section>
-        <section class="elements">
-          <div class="elements__element">
+        <ul class="elements">
+          <li class="elements__element">
             <div class="elements__karachaevsk"></div>
             <div class="elements__group">
               <h2 class="elements__title">Карачаевск</h2>
               <div class="elements__heart"></div>
             </div>
-          </div>
-          <div class="elements__element">
+          </li>
+          <li class="elements__element">
               <div class="elements__elbrus"></div>
               <div class="elements__group">
                 <h2 class="elements__title">Гора Эльбрус</h2>
                 <div class="elements__heart"></div>
               </div>
-          </div>
-          <div class="elements__element">
+            </li>
+          <li class="elements__element">
               <div class="elements__dombai"></div>
               <div class="elements__group">
                 <h2 class="elements__title">Домбай</h2>
                 <div class="elements__heart"></div>
               </div>
-          </div>
-          <div class="elements__element">
+            </li>
+          <li class="elements__element">
             <div class="elements__sochi"></div>
             <div class="elements__group">
               <h2 class="elements__title">Сочи</h2>
               <div class="elements__heart"></div>
             </div>
-          </div>
-          <div class="elements__element">
+          </li>
+          <li class="elements__element">
             <div class="elements__vitebsk"></div>
             <div class="elements__group">
               <h2 class="elements__title">Витебск</h2>
               <div class="elements__heart"></div>
             </div>
-          </div>
-          <div class="elements__element">
+          </li>
+          <li class="elements__element">
             <div class="elements__los-angeles"></div>
             <div class="elements__group">
               <h2 class="elements__title">Лос-Анджелес</h2>
-              <div class="elements__heart"></div>
+              <button class="elements__heart" type="button"></button>
             </div>
-          </div>
-        </section>
+          </li>
+        </ul>
         <section class="edit-form">
-          <p class="edit-form__title">Редактировать профиль</p>
-          <input type="text" class="edit-form__field1" value="Жак-Ив Кусто">
-          <div class="edit-form__line"></div>
-          <input type="text" class="edit-form__field2" value="Исследователь океана">
-          <div class="edit-form__line"></div>
-          <button class="edit-form__submit-button">Сохранить</button>
-          <button class="edit-form__close-icon"></button>
+          <h3 class="edit-form__title">Редактировать профиль</h3>
+          <form class="edit-form__input">
+          <input type="text" class="edit-form__input-line edit-form__field1" placeholder="Жак-Ив Кусто">
+          <input type="text" class="edit-form__input-line edit-form__field2" placeholder="Исследователь океана">
+          <button class="edit-form__submit-button" type="submit">Сохранить</button>
+          </form>
+          <button class="edit-form__close-icon" type="button"></button>         
         </section>
       </main>
       <footer class="footer">

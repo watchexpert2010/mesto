@@ -1,21 +1,21 @@
 .profile__addbutton {
-  background-image: url(../../../images/addButton.svg);
+  height: 50px;
   background-color: #000000;
   border: none;
   cursor: pointer;
+  width: 282px;
+  background-image: url(../../../images/addButton-big.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .profile__addbutton:hover {
   opacity: 0.6;
+  transition: 0.5s ease-in-out 0.2s;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .profile__addbutton {
-    height: 50px;
-    width: 282px;
-    background-image: url(../../../images/addButton-big.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
     margin: auto;
     margin-top: 36px;
   }
@@ -23,11 +23,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .profile__addbutton {    
-    width: 282px;
-    height: 50px;
-    background-image: url(../../../images/addButton-big.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
     margin: auto;
     margin-top: 22.5px;
   }
@@ -35,8 +30,8 @@
 
 @media screen and (min-width: 1280px) {
   .profile__addbutton {
+    background-image: url(../../../images/addButton.svg);
     margin-left: 34%;
     width: 150px;
-    height: 50px;
   }
 }

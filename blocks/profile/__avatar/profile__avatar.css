@@ -19,11 +19,3 @@
     margin: auto;
   }
 }
-
-@media screen and (min-width: 1280px) {
-  .profile__avatar {
-    position: relative;
-    left: -10px;
-    top: -10px;
-  }
-}
