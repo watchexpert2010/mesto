@@ -1,3 +1,9 @@
 .edit-form__field2 {
   margin-top: 30px;
 }
+
+@media screen and (min-width: 1280px) {
+  .edit-form__field2 {
+    width: 358px;
+  }
+}

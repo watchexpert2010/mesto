@@ -1,5 +1,6 @@
 .elements__title {
   margin: 25px 0 0 21px;
+  max-width: 200px;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;

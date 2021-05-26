@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -21,40 +22,41 @@
           </div>          
           <button class="profile__addbutton" type="button"></button>
         </section>
-        <ul class="elements">
+        <section class="elements">
+        <ul class="elements__list">
           <li class="elements__element">
             <div class="elements__karachaevsk"></div>
             <div class="elements__group">
               <h2 class="elements__title">Карачаевск</h2>
-              <div class="elements__heart"></div>
+              <button class="elements__heart"></button>
             </div>
           </li>
           <li class="elements__element">
               <div class="elements__elbrus"></div>
               <div class="elements__group">
                 <h2 class="elements__title">Гора Эльбрус</h2>
-                <div class="elements__heart"></div>
+                <button class="elements__heart"></button>
               </div>
             </li>
           <li class="elements__element">
               <div class="elements__dombai"></div>
               <div class="elements__group">
                 <h2 class="elements__title">Домбай</h2>
-                <div class="elements__heart"></div>
+                <button class="elements__heart"></button>
               </div>
             </li>
           <li class="elements__element">
             <div class="elements__sochi"></div>
             <div class="elements__group">
               <h2 class="elements__title">Сочи</h2>
-              <div class="elements__heart"></div>
+              <button class="elements__heart"></button>
             </div>
           </li>
           <li class="elements__element">
             <div class="elements__vitebsk"></div>
             <div class="elements__group">
               <h2 class="elements__title">Витебск</h2>
-              <div class="elements__heart"></div>
+              <button class="elements__heart"></button>
             </div>
           </li>
           <li class="elements__element">
@@ -65,15 +67,18 @@
             </div>
           </li>
         </ul>
-        <section class="edit-form">
-          <h3 class="edit-form__title">Редактировать профиль</h3>
-          <form class="edit-form__input">
-          <input type="text" class="edit-form__input-line edit-form__field1" placeholder="Жак-Ив Кусто">
-          <input type="text" class="edit-form__input-line edit-form__field2" placeholder="Исследователь океана">
-          <button class="edit-form__submit-button" type="submit">Сохранить</button>
-          </form>
-          <button class="edit-form__close-icon" type="button"></button>         
-        </section>
+      </section>
+        <div class="popup-wrapper">
+          <section class="edit-form">
+            <h3 class="edit-form__title">Редактировать профиль</h3>
+            <form class="edit-form__input-form" name="edit-form__input-form">
+            <input type="text" class="edit-form__input-line edit-form__field1" placeholder="Имя">
+            <input type="text" class="edit-form__input-line edit-form__field2" placeholder="О себе">
+            <button class="edit-form__submit-button" type="submit">Сохранить</button>
+            </form>
+            <button class="edit-form__close-icon" type="button"></button>         
+          </section>
+        </div>
       </main>
       <footer class="footer">
         <p class="footer__title">&copy; 2020 Mesto Russia</p>

@@ -5,6 +5,11 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  grid-area: subtitle;
+  width: 300px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -13,6 +18,13 @@
     font-family: 'Inter', Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
+    text-align: center;
+    width: 190px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .profile__subtitle {
     text-align: center;
   }
 }

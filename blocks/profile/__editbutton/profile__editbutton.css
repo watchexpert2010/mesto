@@ -17,25 +17,18 @@
   .profile__editbutton {
     width: 18px;
     height: 18px;
-    position: relative;
-    float: right;
-    margin-top: -60px;
-    margin-right: 7%;
+    margin-top: 32px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .profile__editbutton {    
-    margin-right: -350px;
-    margin-top: -80px;
+  .profile__editbutton {
+    margin-top: 37px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .profile__editbutton {    
-    float: right;
-    position: relative;
-    margin-right: -45px;
-    margin-top: -70px;
+  .profile__editbutton {
+    margin-top: 15px;
   }
 }

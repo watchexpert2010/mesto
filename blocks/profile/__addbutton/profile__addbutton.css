@@ -31,7 +31,7 @@
 @media screen and (min-width: 1280px) {
   .profile__addbutton {
     background-image: url(../../../images/addButton.svg);
-    margin-left: 34%;
+    margin-left: 25%;
     width: 150px;
   }
 }

@@ -1,4 +1,6 @@
 .edit-form__submit-button {
+  border: none;
+  padding: 0;
   width: 83.25%;
   height: 50px;
   background-color: #000000;

@@ -1,4 +1,4 @@
-.elements {
+.elements__list {
   margin: auto;
   display: grid;
   color: #000000;
@@ -11,21 +11,21 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .elements {
+  .elements__list {
     width: 88.125%;
     grid-template-columns: 282px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .elements {
-    width: 85%;
-    grid-template-columns: repeat(auto-fit, 282px);
+  .elements__list {
+    width: 655px;
+    grid-template-columns: repeat(2, 282px);
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .elements {
+  .elements__list {
     width: 68.75%;
     grid-template-columns: repeat(3, 282px);
   }

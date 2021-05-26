@@ -1,11 +1,22 @@
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+.profile__info {
+  display: grid;
+  grid-template-columns: minmax(min-content,max-content) minmax(min-content,max-content);
+  grid-template-rows: minmax(min-content,max-content);
+  grid-template-areas: 
+  'title'
+  'subtitle';
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1279px) {
   .profile__info {  
-    text-align: center;  
+    text-align: center;
+    margin: auto;
    }
 }
 
 @media screen and (min-width: 1280px) {
   .profile__info {
-    margin-left: 4px;
+    margin-left: 20px;
   }
 }

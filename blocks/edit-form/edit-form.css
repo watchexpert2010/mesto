@@ -1,25 +1,15 @@
 .edit-form {
-  position: fixed;
-  width: 430px;
-  height: 330px;
-  left: 425px;
-  top: 195px;
   background-color: #FFFFFF;
   color: #000000;
   border-radius: 10px;
-  display: none;
-}
-
-.edit-form_active {
-  display: block;
+  opacity: 1;
+  z-index: 5;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .edit-form {
     width: 282px;
-    height: 322px;
-    left: 19px;
-    top: 123px;
+    height: 322px;    
   }
 }
 
@@ -32,3 +22,9 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .edit-form {
+  width: 430px;
+  height: 330px;  
+  }
+}
