@@ -9,6 +9,7 @@
   cursor: pointer;
   top: -313px;
   left: 260px;
+  padding: 0;
 }
 
 .edit-form__close-icon:hover {
@@ -18,7 +19,7 @@
 
 @media screen and (min-width: 1280px) {
   .edit-form__close-icon {
-    top: -313px;
+    top: -325px;
     left: 422px;
     height: 40px;
     width: 40px;

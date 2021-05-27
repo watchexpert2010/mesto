@@ -13,6 +13,10 @@
   .footer__title {
     width: 282px;
     margin: auto;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 36px;
   }
 }
 
@@ -20,6 +24,7 @@
   .footer__title {
     width: 600px;
     margin: auto;
+    padding-bottom: 50px;
   }
 }
 

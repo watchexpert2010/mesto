@@ -5,6 +5,7 @@
   grid-template-areas: 
   'title'
   'subtitle';
+  column-gap: 18px;
 }
 
 
@@ -12,6 +13,7 @@
   .profile__info {  
     text-align: center;
     margin: auto;
+    column-gap: 15px;
    }
 }
 

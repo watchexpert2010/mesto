@@ -1,9 +1,9 @@
-.edit-form__field2 {
+.edit-form__job {
   margin-top: 30px;
 }
 
 @media screen and (min-width: 1280px) {
-  .edit-form__field2 {
+  .edit-form__job {
     width: 358px;
   }
 }
