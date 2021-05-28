@@ -1,4 +1,5 @@
 .profile__title {
+  margin-bottom: 0;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -9,7 +10,6 @@
   overflow: hidden;
   grid-area: title;
   width: 300px;
-  margin-bottom: 0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -19,6 +19,7 @@
     line-height: 33px;
     text-align: center;
     width: 190px;
+    margin-top: 22.25px;
   }
 }
 

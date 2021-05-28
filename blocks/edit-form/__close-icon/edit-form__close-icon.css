@@ -2,7 +2,7 @@
   height: 26px;
   width: 26px;
   background-image: url(../../../images/close-icon.svg);
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.01);
   background-size: contain;
   border: none;
   position: relative;

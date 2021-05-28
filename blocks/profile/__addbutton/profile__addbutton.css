@@ -33,5 +33,6 @@
     background-image: url(../../../images/addButton.svg);
     margin-left: 25%;
     width: 150px;
+    margin-top: 30px;
   }
 }
