@@ -1,18 +1,18 @@
-let addButton = document.querySelector('.profile__editbutton');
-let popup = document.querySelector('.popup-wrapper');
+let editButton = document.querySelector('.profile__editbutton');
+let popup = document.querySelector('.popup');
 let popupClose = document.querySelector('.edit-form__close-icon');
-let nameInput = document.querySelector('.edit-form__input-line_name');
-let jobInput = document.querySelector('.edit-form__input-line_job');
-let submitForm = document.querySelector('.edit-form__input-form');
+let nameInput = document.querySelector('.popup__input-line_name');
+let jobInput = document.querySelector('.popup__input-line_job');
+let submitForm = document.querySelector('.popup__input-form');
 let title = document.querySelector('.profile__title');
 let subtitle = document.querySelector('.profile__subtitle');
 function popupActive() {
-  popup.classList.add('popup-wrapper_active');
+  popup.classList.add('popup_active');
   nameInput.value = title.textContent;
   jobInput.value = subtitle.textContent;
 }
 function popupInactive() {
-  popup.classList.remove('popup-wrapper_active');
+  popup.classList.remove('popup_active');
 }
 function submitInfo (evt) {
   evt.preventDefault();
@@ -21,5 +21,5 @@ function submitInfo (evt) {
   popupInactive();
 }
 submitForm.addEventListener('submit', submitInfo);
-addButton.addEventListener('click', popupActive);
+editButton.addEventListener('click', popupActive);
 popupClose.addEventListener('click', popupInactive);

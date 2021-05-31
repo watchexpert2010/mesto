@@ -1,4 +1,4 @@
-.edit-form {
+.popup__edit-form {
   background-color: #FFFFFF;
   color: #000000;
   border-radius: 10px;
@@ -7,14 +7,14 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .edit-form {
+  .popup__edit-form {
     width: 282px;
-    height: 322px;    
+    height: 322px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .edit-form {
+  .popup__edit-form {
     width: 282px;
     height: 322px;
     left: 35%;
@@ -23,8 +23,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .edit-form {
+  .popup__edit-form {
   width: 430px;
-  height: 330px;  
+  height: 330px;
   }
 }

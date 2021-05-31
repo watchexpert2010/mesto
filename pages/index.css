@@ -46,18 +46,18 @@
 
 @import url(../blocks/footer/footer__title.css);
 
-@import url(../blocks/edit-form/__input-line/edit-form__input-line.css);
+@import url(../blocks/popup/__input-line/popup__input-line.css);
 
-@import url(../blocks/edit-form/edit-form.css);
+@import url(../blocks/popup/__edit-form/popup__edit-form.css);
 
-@import url(../blocks/edit-form/__title/edit-form__title.css);
+@import url(../blocks/popup/__title/popup__title.css);
 
 @import url(../blocks/edit-form/__submit-button/edit-form__submit-button.css);
 
 @import url(../blocks/edit-form/__close-icon/edit-form__close-icon.css);
 
-@import url(../blocks/popup-wrapper/popup-wrapper.css);
+@import url(../blocks/popup/popup.css);
 
-@import url(../blocks/popup-wrapper/_active/popup-wrapper_active.css);
+@import url(../blocks/popup/_active/popup_active.css);
 
 @import url(../blocks/elements/__description/elements__description.css);
