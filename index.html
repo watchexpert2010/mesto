@@ -23,51 +23,8 @@
           <button class="profile__addbutton" type="button"></button>
         </section>
         <section class="elements">
-        <ul class="elements__list">
-          <li class="elements__element">
-            <div class="elements__karachaevsk elements__description"></div>
-            <div class="elements__group">
-              <h2 class="elements__title">Карачаевск</h2>
-              <button class="elements__heart" type="button"></button>
-            </div>
-          </li>
-          <li class="elements__element">
-              <div class="elements__elbrus elements__description"></div>
-              <div class="elements__group">
-                <h2 class="elements__title">Гора Эльбрус</h2>
-                <button class="elements__heart" type="button"></button>
-              </div>
-            </li>
-          <li class="elements__element">
-              <div class="elements__dombai elements__description"></div>
-              <div class="elements__group">
-                <h2 class="elements__title">Домбай</h2>
-                <button class="elements__heart" type="button"></button>
-              </div>
-            </li>
-          <li class="elements__element">
-            <div class="elements__sochi elements__description"></div>
-            <div class="elements__group">
-              <h2 class="elements__title">Сочи</h2>
-              <button class="elements__heart" type="button"></button>
-            </div>
-          </li>
-          <li class="elements__element">
-            <div class="elements__vitebsk elements__description"></div>
-            <div class="elements__group">
-              <h2 class="elements__title">Витебск</h2>
-              <button class="elements__heart" type="button"></button>
-            </div>
-          </li>
-          <li class="elements__element">
-            <div class="elements__los-angeles elements__description"></div>
-            <div class="elements__group">
-              <h2 class="elements__title">Лос-Анджелес</h2>
-              <button class="elements__heart" type="button"></button>
-            </div>
-          </li>
-        </ul>
-      </section>
+          <ul class="elements__list"></ul>      
+        </section>
         <div class="popup">
           <div class="popup__edit-form">
             <h3 class="popup__title">Редактировать профиль</h3>
@@ -81,9 +38,18 @@
         </div>
       </main>
       <footer class="footer">
-        <p class="footer__title">&copy; 2020 Mesto Russia</p>
+        <p class="footer__title">&copy; 2021 Mesto Russia</p>
       </footer>
   </div>
+  <template id="cards-template">
+    <li class="elements__element">
+      <div class="elements__city elements__description"></div>
+      <div class="elements__group">
+      <h2 class="elements__title"></h2>
+      <button class="elements__heart" type="button"></button>
+      </div>
+    </li>
+  </template>
   <script src="./scripts/script.js"></script>
 </body>
 </html>
