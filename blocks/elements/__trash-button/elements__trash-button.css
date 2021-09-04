@@ -4,5 +4,11 @@
   margin-top: 18px;
   margin-left: 255px;
   border: none;
-  padding: 0;  
+  padding: 0;
+  cursor: pointer;
+}
+
+.elements__trash-button:hover {
+  opacity: 0.6;
+  transition: 0.5s ease-in-out 0.2s;
 }
