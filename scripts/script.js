@@ -26,6 +26,25 @@ submitForm.addEventListener('submit', submitInfo);
 editButton.addEventListener('click', popupActive);
 popupClose.addEventListener('click', popupInactive);
 
+//addButton-popup
+
+let addButton = document.querySelector('.profile__addbutton');
+let addButtonPopup = document.querySelector('.addcard-popup');
+let addCardClose = document.querySelector('.addcard-popup__close-icon');
+
+let addCardPlaceInput = document.querySelector('.addcard-popup__input-line_value_place');
+let addCardLinkInput = document.querySelector('.addcard-popup__input-line_value_link');
+
+function addCardPopupActive() {
+  addButtonPopup.classList.add('addcard-popup_active');
+}
+
+function addCardPopupInactive() {
+  addButtonPopup.classList.remove('addcard-popup_active');
+}
+
+addButton.addEventListener('click', addCardPopupActive);
+addCardClose.addEventListener('click', addCardPopupInactive);
 
 //cards
 
