@@ -63,6 +63,7 @@ const postingFormElement = document.querySelector('.addcard-popup__input-form');
 const addCardPlaceInput = document.querySelector('.addcard-popup__input-line_value_place');
 const addCardLinkInput = document.querySelector('.addcard-popup__input-line_value_link');
 
+
 function addCardPopupActive() {
   addButtonPopup.classList.add('addcard-popup_active');
 }
@@ -89,7 +90,12 @@ const addPost = (post) => {
   postElement.querySelector('.elements__title').textContent = post.name;
   postElement.querySelector('.elements__city').style.backgroundImage = `url(${post.link})`
   postElement.querySelector('.elements__trash-button').addEventListener('click', removePostHandler);
+  postElement.querySelector('.elements__heart').addEventListener('click', likeButtonPressed);
   postsElement.append(postElement);
+
+  function likeButtonPressed() {
+    postElement.querySelector('.elements__heart').classList.toggle('elements__heart-clicked');
+  }
 };
 
 const postingFormHandler = (event) => {
@@ -109,3 +115,4 @@ postingFormElement.addEventListener('submit', postingFormHandler);
 initialCards.forEach((post) => {
   addPost(post);
 });
+
