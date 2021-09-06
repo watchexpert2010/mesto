@@ -1,4 +1,4 @@
-//popup
+//profile-popup
 
 let editButton = document.querySelector('.profile__editbutton');
 let popup = document.querySelector('.popup');
@@ -26,27 +26,7 @@ submitForm.addEventListener('submit', submitInfo);
 editButton.addEventListener('click', popupActive);
 popupClose.addEventListener('click', popupInactive);
 
-//addButton-popup
-
-let addButton = document.querySelector('.profile__addbutton');
-let addButtonPopup = document.querySelector('.addcard-popup');
-let addCardClose = document.querySelector('.addcard-popup__close-icon');
-
-let addCardPlaceInput = document.querySelector('.addcard-popup__input-line_value_place');
-let addCardLinkInput = document.querySelector('.addcard-popup__input-line_value_link');
-
-function addCardPopupActive() {
-  addButtonPopup.classList.add('addcard-popup_active');
-}
-
-function addCardPopupInactive() {
-  addButtonPopup.classList.remove('addcard-popup_active');
-}
-
-addButton.addEventListener('click', addCardPopupActive);
-addCardClose.addEventListener('click', addCardPopupInactive);
-
-//cards
+//addCards
 
 const initialCards = [
   {
@@ -74,18 +54,57 @@ const initialCards = [
     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
   }
 ];
+
+const addButton = document.querySelector('.profile__addbutton');
+const addButtonPopup = document.querySelector('.addcard-popup');
+const addCardClose = document.querySelector('.addcard-popup__close-icon');
+
+const postingFormElement = document.querySelector('.addcard-popup__input-form');
+const addCardPlaceInput = document.querySelector('.addcard-popup__input-line_value_place');
+const addCardLinkInput = document.querySelector('.addcard-popup__input-line_value_link');
+
+function addCardPopupActive() {
+  addButtonPopup.classList.add('addcard-popup_active');
+}
+
+function addCardPopupInactive() {
+  addButtonPopup.classList.remove('addcard-popup_active');
+}
+
+addButton.addEventListener('click', addCardPopupActive);
+addCardClose.addEventListener('click', addCardPopupInactive);
+
+
 const postsElement = document.querySelector('.elements__list');
 const postTemplate = document.querySelector('#cards-template').content;
 const cardsName = document.querySelector('.elements__title');
-const cardsUrl = document.querySelector('elements__city');
+const cardsUrl = document.querySelector('.elements__city');
 
+const removePostHandler = (event) => {
+  event.target.closest('.elements__element').remove();
+};
 
 const addPost = (post) => {
   const postElement = postTemplate.querySelector('.elements__element').cloneNode(true);
   postElement.querySelector('.elements__title').textContent = post.name;
   postElement.querySelector('.elements__city').style.backgroundImage = `url(${post.link})`
+  postElement.querySelector('.elements__trash-button').addEventListener('click', removePostHandler);
   postsElement.append(postElement);
 };
+
+const postingFormHandler = (event) => {
+  event.preventDefault();
+
+  addPost({
+      name: addCardPlaceInput.value,
+      link: addCardLinkInput.value
+  });
+
+  postingFormElement.reset();
+  addCardPopupInactive();
+};
+
+postingFormElement.addEventListener('submit', postingFormHandler);
 
 initialCards.forEach((post) => {
   addPost(post);
