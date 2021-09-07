@@ -1,0 +1,27 @@
+.addcard-popup__close-icon {
+  height: 26px;
+  width: 26px;
+  background-image: url(../../../images/close-icon.svg);
+  background-color: rgba(0,0,0,.01);
+  background-size: contain;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  top: -313px;
+  left: 260px;
+  padding: 0;
+}
+
+.addcard-popup__close-icon:hover {
+  opacity: 0.6;
+  transition: 0.5s ease-in-out 0.2s;
+}
+
+@media screen and (min-width: 1280px) {
+  .addcard-popup__close-icon {
+    top: -325px;
+    left: 422px;
+    height: 40px;
+    width: 40px;
+  }
+}

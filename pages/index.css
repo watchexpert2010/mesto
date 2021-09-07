@@ -24,18 +24,6 @@
 
 @import url(../blocks/elements/__element/elements__element.css);
 
-@import url(../blocks/elements/__karachaevsk/elements__karachaevsk.css);
-
-@import url(../blocks/elements/__elbrus/elements__elbrus.css);
-
-@import url(../blocks/elements/__dombai/elements__dombai.css);
-
-@import url(../blocks/elements/__sochi/elements__sochi.css);
-
-@import url(../blocks/elements/__vitebsk/elements__vitebsk.css);
-
-@import url(../blocks/elements/__los-angeles/elements__los-angeles.css);
-
 @import url(../blocks/profile/__info/profile__info.css);
 
 @import url(../blocks/elements/__group/elements__group.css);
@@ -64,7 +52,19 @@
 
 @import url(../blocks/elements/__trash-button/elements__trash-button.css);
 
-@import url(../blocks/addcard-popup/__addcard-popup.css);
+@import url(../blocks/addcard-popup/addcard-popup.css);
+
+@import url(../blocks/addcard-popup/_active/addcard-popup_active.css);
+
+@import url(../blocks/addcard-popup/__title/addcard-popup__title.css);
+
+@import url(../blocks/addcard-popup/__submit-button/addcard-popup__submit-button.css);
+
+@import url(../blocks/addcard-popup/__input-line/addcard-popup__input-line.css);
+
+@import url(../blocks/addcard-popup/__edit-form/addcard-popup__edit-form.css);
+
+@import url(../blocks/addcard-popup/__close-icon/addcard-popup__close-icon.css);
 
 @import url(../blocks/elements/../popup/../elements/__heart-clicked/heart-clicked.css);
 
