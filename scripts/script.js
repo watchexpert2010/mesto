@@ -1,13 +1,13 @@
 //profile-popup
 
-let editButton = document.querySelector('.profile__editbutton');
-let popup = document.querySelector('.popup');
-let popupClose = document.querySelector('.popup__close-icon');
-let nameInput = document.querySelector('.popup__input-line_value_name');
-let jobInput = document.querySelector('.popup__input-line_value_job');
-let submitForm = document.querySelector('.popup__input-form');
-let title = document.querySelector('.profile__title');
-let subtitle = document.querySelector('.profile__subtitle');
+const editButton = document.querySelector('.profile__editbutton');
+const popup = document.querySelector('.popup');
+const popupClose = document.querySelector('.popup__close-icon');
+const nameInput = document.querySelector('.popup__input-line_value_name');
+const jobInput = document.querySelector('.popup__input-line_value_job');
+const submitForm = document.querySelector('.popup__input-form');
+const title = document.querySelector('.profile__title');
+const subtitle = document.querySelector('.profile__subtitle');
 function popupActive() {
   popup.classList.add('popup_active');
   nameInput.value = title.textContent;
@@ -26,7 +26,7 @@ submitForm.addEventListener('submit', submitInfo);
 editButton.addEventListener('click', popupActive);
 popupClose.addEventListener('click', popupInactive);
 
-//addCards
+//addCardsPopup + bigImagePopup
 
 const initialCards = [
   {
