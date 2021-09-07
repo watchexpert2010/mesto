@@ -45,21 +45,28 @@
               <button class="addcard-popup__submit-button" type="submit">Создать</button>
             </form>
             <button class="addcard-popup__close-icon" type="button"></button>
+          </div>
       </main>
       <footer class="footer">
         <p class="footer__title">&copy; 2021 Mesto Russia</p>
       </footer>
-  </div>
   <template id="cards-template">
-    <li class="elements__element">      
+    <li class="elements__element">
       <div class="elements__city elements__description">
         <img class="elements__trash-button" src="../mesto/images/trash-button.svg" alt="trash-button">
       </div>
+      <div class="image-popup">
+      <div class="image-popup__container">
+        <img class="image-popup__image" src="" alt="alt">
+        <div class="image-popup__close-icon"></div>
+        <h3 class="image-popup__title">Название места</h3>
+      </div>
+      </div>
       <div class="elements__group">
       <h2 class="elements__title"></h2>
-      <button class="elements__heart" type="button"></button>
+      <button class="elements__heart" type="button"></button>      
       </div>
-    </li>
+    </li>    
   </template>
   <script src="./scripts/script.js"></script>
 </body>

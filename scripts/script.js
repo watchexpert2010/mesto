@@ -88,10 +88,24 @@ const removePostHandler = (event) => {
 const addPost = (post) => {
   const postElement = postTemplate.querySelector('.elements__element').cloneNode(true);
   postElement.querySelector('.elements__title').textContent = post.name;
-  postElement.querySelector('.elements__city').style.backgroundImage = `url(${post.link})`
+  postElement.querySelector('.elements__city').style.backgroundImage = `url(${post.link})`;
   postElement.querySelector('.elements__trash-button').addEventListener('click', removePostHandler);
   postElement.querySelector('.elements__heart').addEventListener('click', likeButtonPressed);
+  postElement.querySelector('.elements__description').addEventListener('click', imagePopup);
+  postElement.querySelector('.image-popup__close-icon').addEventListener('click', imagePopupClose);
+
   postsElement.append(postElement);
+
+  function imagePopup() {
+    postElement.querySelector('.image-popup').classList.add('image-popup_active');
+    postElement.querySelector('.image-popup__image').src = post.link;
+    postElement.querySelector('.image-popup__image').alt = post.name;
+    postElement.querySelector('.image-popup__title').textContent = post.name;
+  }
+
+  function imagePopupClose() {
+    postElement.querySelector('.image-popup').classList.remove('image-popup_active');
+  }
 
   function likeButtonPressed() {
     postElement.querySelector('.elements__heart').classList.toggle('elements__heart-clicked');
