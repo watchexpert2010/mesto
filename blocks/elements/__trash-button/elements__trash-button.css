@@ -3,9 +3,12 @@
   height: 19.3px;
   margin-top: 18px;
   margin-left: 255px;
-  border: none;
   padding: 0;
   cursor: pointer;
+  background-image: url(../../../images/trash-button.svg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 
 .elements__trash-button:hover {
