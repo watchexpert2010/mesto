@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
-    <title>Mesto</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mesto</title>
 </head>
+
 <body>
   <div class="page">
-      <header class="header">
-        <img class="header__logo" src="./images/logo.svg" alt="логотип">
-      </header>
-      <main class="main-content">
-        <section class="profile">
-          <div class="profile__avatar"></div>
-          <div class="profile__info">
-            <h1 class="profile__title">Жак-Ив Кусто</h1>
-            <p class="profile__subtitle">Исследователь океана</p>
-            <button class="profile__editbutton" type="button"></button>
-          </div>          
-          <button class="profile__addbutton" type="button"></button>
-        </section>
-        <section class="elements">
-          <ul class="elements__list"></ul>      
-        </section>
-        <div class="popup">
-          <div class="popup__edit-form">
-            <h3 class="popup__title">Редактировать профиль</h3>
-            <form class="popup__input-form" name="popup__input-form">
-              <input type="text" class="popup__input-line popup__input-line_value_name" placeholder="Имя">
-              <input type="text" class="popup__input-line popup__input-line_value_job" placeholder="О себе">
-              <button class="popup__submit-button" type="submit">Сохранить</button>
-            </form>
-            <button class="popup__close-icon" type="button"></button>         
+    <header class="header">
+      <img class="header__logo" src="./images/logo.svg" alt="логотип">
+    </header>
+    <main class="main-content">
+      <section class="profile">
+        <div class="profile__avatar"></div>
+        <div class="profile__info">
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <p class="profile__subtitle">Исследователь океана</p>
+          <button class="profile__editbutton" type="button"></button>
+        </div>
+        <button class="profile__addbutton" type="button"></button>
+      </section>
+      <section class="elements">
+        <ul class="elements__list"></ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__title">&copy; 2021 Mesto Russia</p>
+    </footer>
+    <div class="popup">
+      <div class="popup__edit-form">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__input-form" name="popup__input-form">
+          <input type="text" class="popup__input-line popup__input-line_value_name" placeholder="Имя">
+          <input type="text" class="popup__input-line popup__input-line_value_job" placeholder="О себе">
+          <button class="popup__submit-button" type="submit">Сохранить</button>
+        </form>
+        <button class="popup__close-icon" type="button"></button>
+      </div>
+    </div>
+    <div class="addcard-popup">
+      <div class="addcard-popup__edit-form">
+        <h3 class="addcard-popup__title">Новое место</h3>
+        <form class="addcard-popup__input-form" name="addcard-popup__input-form">
+          <input type="text" class="addcard-popup__input-line addcard-popup__input-line_value_place"
+            placeholder="Название">
+          <input type="url" class="addcard-popup__input-line addcard-popup__input-line_value_link"
+            placeholder="Ссылка на картинку">
+          <button class="addcard-popup__submit-button" type="submit">Создать</button>
+        </form>
+        <button class="addcard-popup__close-icon" type="button"></button>
+      </div>
+    </div>
+    <template id="cards-template">
+      <li class="elements__element">
+        <div class="elements__city elements__description">
+          <img class="elements__trash-button" src="./images/trash-button.svg" alt="trash-button">
+        </div>
+        <div class="image-popup">
+          <div class="image-popup__container">
+            <img class="image-popup__image"
+              src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="alt">
+            <div class="image-popup__close-icon"></div>
+            <h3 class="image-popup__title">Название места</h3>
           </div>
         </div>
-        <div class="addcard-popup">
-          <div class="addcard-popup__edit-form">
-            <h3 class="addcard-popup__title">Новое место</h3>
-            <form class="addcard-popup__input-form" name="addcard-popup__input-form">
-              <input type="text" class="addcard-popup__input-line addcard-popup__input-line_value_place" placeholder="Название">
-              <input type="text" class="addcard-popup__input-line addcard-popup__input-line_value_link" placeholder="Ссылка на картинку">
-              <button class="addcard-popup__submit-button" type="submit">Создать</button>
-            </form>
-            <button class="addcard-popup__close-icon" type="button"></button>
-          </div>
+        <div class="elements__group">
+          <h2 class="elements__title"></h2>
+          <button class="elements__heart" type="button"></button>
         </div>
-      </main>
-      <footer class="footer">
-        <p class="footer__title">&copy; 2021 Mesto Russia</p>
-      </footer>
-  <template id="cards-template">
-    <li class="elements__element">
-      <div class="elements__city elements__description">
-        <img class="elements__trash-button" src="./images/trash-button.svg" alt="trash-button">
-      </div>
-      <div class="image-popup">
-      <div class="image-popup__container">
-        <img class="image-popup__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="alt">
-        <div class="image-popup__close-icon"></div>
-        <h3 class="image-popup__title">Название места</h3>
-      </div>
-      </div>
-      <div class="elements__group">
-      <h2 class="elements__title"></h2>
-      <button class="elements__heart" type="button"></button>      
-      </div>
-    </li>    
-  </template>
+      </li>
+    </template>
   </div>
   <script src="./scripts/script.js"></script>
 </body>
+
 </html>

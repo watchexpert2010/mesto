@@ -108,7 +108,7 @@ const addPost = (post) => {
   }
 
   function likeButtonPressed() {
-    postElement.querySelector('.elements__heart').classList.toggle('elements__heart-clicked');
+    postElement.querySelector('.elements__heart').classList.toggle('elements__heart_active');
   }
 };
 
