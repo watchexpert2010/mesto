@@ -34,19 +34,19 @@
 
 @import url(../blocks/footer/footer__title.css);
 
-@import url(../blocks/popup/__input-line/popup__input-line.css);
+@import url(../blocks/popup/__input-line/popup-profile__input-line.css);
 
-@import url(../blocks/popup/__edit-form/popup__edit-form.css);
+@import url(../blocks/popup/__edit-form/popup-profile__edit-form.css);
 
-@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__title/popup-profile__title.css);
 
-@import url(../blocks/popup/__submit-button/popup__submit-button.css);
+@import url(../blocks/popup/__submit-button/popup-profile__submit-button.css);
 
-@import url(../blocks/popup/__close-icon/popup__close-icon.css);
+@import url(../blocks/popup/__close-icon/popup-profile__close-icon.css);
 
-@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/popup-profile.css);
 
-@import url(../blocks/popup/_active/popup_active.css);
+@import url(../blocks/popup/_active/popup-profile_active.css);
 
 @import url(../blocks/elements/__description/elements__description.css);
 

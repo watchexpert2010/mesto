@@ -1,20 +1,20 @@
 //profile-popup
 
 const editButton = document.querySelector('.profile__editbutton');
-const popupProfile = document.querySelector('.popup');
-const popupProfileClose = document.querySelector('.popup__close-icon');
-const nameInput = document.querySelector('.popup__input-line_value_name');
-const jobInput = document.querySelector('.popup__input-line_value_job');
-const submitForm = document.querySelector('.popup__input-form');
+const popupProfile = document.querySelector('.popup-profile');
+const popupProfileClose = document.querySelector('.popup-profile__close-icon');
+const nameInput = document.querySelector('.popup-profile__input-line_value_name');
+const jobInput = document.querySelector('.popup-profile__input-line_value_job');
+const submitForm = document.querySelector('.popup-profile__input-form');
 const ProfileTitle = document.querySelector('.profile__title');
 const ProfileSubtitle = document.querySelector('.profile__subtitle');
 function ProfilePopupActive() {
-  popupProfile.classList.add('popup_active');
+  popupProfile.classList.add('popup-profile_active');
   nameInput.value = ProfileTitle.textContent;
   jobInput.value = ProfileSubtitle.textContent;
 }
 function ProfilePopupInactive() {
-  popupProfile.classList.remove('popup_active');
+  popupProfile.classList.remove('popup-profile_active');
 }
 function submitInfo (evt) {
   evt.preventDefault();
